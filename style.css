@@ -1,0 +1,8 @@
+/* Criando o seletor de classe para a UL, na qual vai deixar as palavras deitadas.*/
+.deitado {
+
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
