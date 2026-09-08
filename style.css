@@ -1,13 +1,14 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     background-color: rgb(128, 236, 95);
     margin: 0;
     padding: 0;
 }
+
 main {
     background-color: rgb(192, 192, 192);
     margin: 0;
@@ -24,6 +25,7 @@ h1 {
     overflow: hidden;
     aspect-ratio: 21 / 7;
 }
+
 .prod-destaque-container img {
     width: 100%;
     height: 100%;
@@ -31,6 +33,7 @@ h1 {
     object-position: left bottom;
     display: block;
 }
+
 .prod-destaque-container p {
     position: absolute;
     bottom: 0;
@@ -47,11 +50,13 @@ h1 {
     justify-content: space-around;
     margin: 0;
 }
+
 .esquerda {
     margin-left: 3%;
     justify-content: left;
 }
-.espaco-esquereda-direita{
+
+.espaco-esquerda-direita {
     margin-left: 3%;
     margin-right: 3%;
 }
@@ -70,13 +75,73 @@ footer {
     margin: 0;
     padding: 0;
 }
-.bloco-footer{
+
+.bloco-footer {
     width: 10%;
 }
-.bloco-footer h3{
+
+.bloco-footer h3 {
     text-align: left;
 }
+
 .copyright p {
-    color:rgb(58, 58, 58)
+    color: rgb(58, 58, 58)
 }
 
+
+/* Definição da classe para usar na lista de bicicletas*/
+.vitrine img {
+
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+
+}
+
+.vitrine {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+/* classe para que o flex não esprema as imagens */
+.vitrine li {
+
+    flex-shrink: 0;
+
+}
+
+.carrossel {
+    position: relative;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    /* aparencia do botao */
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.seta-esquerda {
+    left: 10px;
+}
+
+.seta-direita {
+    right: 10px;
+}
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+}
