@@ -1,4 +1,57 @@
-/* Criando o seletor de classe para a UL, na qual vai deixar as palavras deitadas.*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(128, 236, 95);
+    margin: 0;
+    padding: 0;
+}
+main {
+    background-color: rgb(192, 192, 192);
+    margin: 0;
+    padding: 0;
+}
+footer {
+    background-color: rgb(128, 236, 95);
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+
+
+.prod-destaque-container {
+    position: relative;
+}
+.prod-destaque-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.prod-destaque-container p {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2.5%;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+.imagem-header {
+    height: 100%;
+}
+
+.espacado-deitado {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
 .deitado {
 
     list-style: none;
@@ -6,3 +59,4 @@
     gap: 30px;
 
 }
+
