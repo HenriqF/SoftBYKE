@@ -53,8 +53,8 @@
             <section>
                 <h2>BICICLETAS</h2>
                 <div class="carrossel">
-                    <button class="seta seta-esquerda" aria-label="Ver bicicletas anteriores">&#10094;</button>
-                    <ul class="vitrine">
+                    <button class="seta seta-esquerda" aria-label="Ver bicicletas anteriores" onclick="rolar_vitrine(0)">&#10094;</button>
+                    <ul class="vitrine" id="vitrine1">
                         <li><img src="fotos/bike1.png" alt=""></li>
                         <li><img src="fotos/bike2.png" alt=""></li>
                         <li><img src="fotos/bike3.png" alt=""></li>
@@ -67,7 +67,27 @@
                         <li><img src="fotos/bike10.png" alt=""></li>
 
                     </ul>
-                    <button class="seta seta-direita" aria-label="Ver proximas bicicletas">&#10095;</button>
+                    <button class="seta seta-direita" aria-label="Ver proximas bicicletas" onclick="rolar_vitrine(1)">&#10095;</button>
+                </div>
+                <h3>VER MAIS</h2>
+
+            </section>
+
+            <section style="margin-top: 110px;">
+                <h2>OUTROS</h2>
+                <div class="carrossel">
+                    <button class="seta seta-esquerda" aria-label="Ver pecas anteriores" onclick="rolar_vitrine(2)">&#10094;</button>
+                    <ul class="vitrine" id="vitrine2">
+                        <li><img src="fotos/peca1.png" alt=""></li>
+                        <li><img src="fotos/peca2.png" alt=""></li>
+                        <li><img src="fotos/peca3.png" alt=""></li>
+                        <li><img src="fotos/peca4.png" alt=""></li>
+                        <li><img src="fotos/peca5.png" alt=""></li>
+                        <li><img src="fotos/peca6.png" alt=""></li>
+                        <li><img src="fotos/peca7.png" alt=""></li>
+
+                    </ul>
+                    <button class="seta seta-direita" aria-label="Ver proximas pecas" onclick="rolar_vitrine(3)">&#10095;</button>
                 </div>
                 <h3>VER MAIS</h2>
 
