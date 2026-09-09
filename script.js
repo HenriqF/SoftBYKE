@@ -2,22 +2,19 @@
 //BICICLETAS SCROLL VERTICAL
 //
 
-const vitrine = document.querySelector('.vitrine');
-const setaEsquerda = document.querySelector('.seta-esquerda');
-const setaDireita = document.querySelector('.seta-direita');
-
+const vitrine1 = document.getElementById('vitrine1');
+const vitrine2 = document.getElementById('vitrine2');
 
 const passo = 416.59;
 
+function rolar_vitrine(n){
+  if(n==0) vitrine1.scrollBy({ left: -passo, behavior: 'smooth' })
+  if(n==1) vitrine1.scrollBy({ left: passo, behavior: 'smooth' })
 
-setaDireita.addEventListener('click', () => {
-    vitrine.scrollBy({ left: passo, behavior: 'smooth' });
-});
+  if(n==2) vitrine2.scrollBy({ left: -passo, behavior: 'smooth' })
+  if(n==3) vitrine2.scrollBy({ left: passo, behavior: 'smooth' })
 
-setaEsquerda.addEventListener('click', () => {
-
-    vitrine.scrollBy({ left: -passo, behavior: 'smooth' });
-});
+}
 
 //
 //FAZER HEADER FICAR BRANCO APÓS SCROLL
