@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+}
+main{
+    margin-top: 200px;
+}
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 1);
+    }
+
+.espacado-deitado {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+}
+.deitado {
+
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo{
+    width: 180px;
+    height: 47px;
+    background-image: url(../fotos/icons/logo.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: -150px;
+
+    transition: background-image 0.3s ease-in-out;
+}
+#icons-header{
+    display: flex;
+    gap: 25px;
+    margin: 10px -150px 10px 0px;
+}
+#shop{
+    width: 35px;
+    height: 35px;
+    background-image: url(../fotos/icons/shop.png);
+    background-size: cover;
+    background-position: center;
+
+    transition: background-image 0.3s ease-in-out;
+}
+#profile{
+    width: 35px;
+    height: 35px;
+    background-image: url(../fotos/icons/profile.png);
+    background-size: cover;
+    background-position: center;
+
+    transition: background-image 0.3s ease-in-out;
+}
+#search{
+    width: 35px;
+    height: 35px;
+    background-image: url(../fotos/icons/search.png);
+    background-size: cover;
+    background-position: center;
+
+    transition: background-image 0.3s ease-in-out;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+footer {
+    background-color: #151515;
+    padding-top: 70px;
+    color: white;
+    display: flex;
+    box-shadow: 0 10px 110px rgba(0, 0, 0, 0.5);
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    gap: 0px;
+}
+.footer-col h3{
+    font-size: 1vw;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    word-spacing: 6px;
+}
+
+.footer-col h4{
+    font-size: 0.8vw;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    word-spacing: 6px;
+}
+
+.copyright{
+    color: grey;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    margin-left: -374.92px;
+}
+
+#icons-footer{
+    display: flex;
+    gap: 15px;
+}
+
+#face{
+    width: 35px;
+    height: 35px;
+    background-image: url(../fotos/icons/face.png);
+    background-size: cover;
+    background-position: center;
+}
+#insta{
+    width: 35px;
+    height: 35px;
+    background-image: url(../fotos/icons/insta.png);
+    background-size: cover;
+    background-position: center;
+}
+#zap{
+    width: 35px;
+    height: 35px;
+    background-image: url(../fotos/icons/zap.png);
+    background-size: cover;
+    background-position: center;
+}

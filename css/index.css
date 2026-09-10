@@ -4,6 +4,9 @@ body {
     font-family: sans-serif;
     background-color: #f0f2f5;
 }
+/* HEADER */
+/* HEADER */
+/* HEADER */
 
 header {
     position: fixed;
@@ -34,7 +37,13 @@ header {
     justify-content: space-around;
     margin-top: 0;
 }
+.deitado {
 
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -43,7 +52,7 @@ a {
 #logo{
     width: 180px;
     height: 47px;
-    background-image: url(fotos/icons/logo-white.png);
+    background-image: url(../fotos/icons/logo-white.png);
     background-size: cover;
     background-position: center;
     margin-left: -150px;
@@ -58,7 +67,7 @@ a {
 #shop{
     width: 35px;
     height: 35px;
-    background-image: url(fotos/icons/shop-white.png);
+    background-image: url(../fotos/icons/shop-white.png);
     background-size: cover;
     background-position: center;
 
@@ -67,7 +76,7 @@ a {
 #profile{
     width: 35px;
     height: 35px;
-    background-image: url(fotos/icons/profile-white.png);
+    background-image: url(../fotos/icons/profile-white.png);
     background-size: cover;
     background-position: center;
 
@@ -76,12 +85,87 @@ a {
 #search{
     width: 35px;
     height: 35px;
-    background-image: url(fotos/icons/search-white.png);
+    background-image: url(../fotos/icons/search-white.png);
     background-size: cover;
     background-position: center;
 
     transition: background-image 0.3s ease-in-out;
 }
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+footer {
+    background-color: #151515;
+    padding-top: 70px;
+    color: white;
+    display: flex;
+    box-shadow: 0 10px 110px rgba(0, 0, 0, 0.5);
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    gap: 0px;
+}
+.footer-col h3{
+    font-size: 1vw;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    word-spacing: 6px;
+}
+
+.footer-col h4{
+    font-size: 0.8vw;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    word-spacing: 6px;
+}
+
+.copyright{
+    color: grey;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    margin-left: -374.92px;
+}
+
+#icons-footer{
+    display: flex;
+    gap: 15px;
+}
+
+#face{
+    width: 35px;
+    height: 35px;
+    background-image: url(../fotos/icons/face.png);
+    background-size: cover;
+    background-position: center;
+}
+#insta{
+    width: 35px;
+    height: 35px;
+    background-image: url(../fotos/icons/insta.png);
+    background-size: cover;
+    background-position: center;
+}
+#zap{
+    width: 35px;
+    height: 35px;
+    background-image: url(../fotos/icons/zap.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* IMAGEM ULTRA WIDE DESTAQUE */
+/* IMAGEM ULTRA WIDE DESTAQUE */
+/* IMAGEM ULTRA WIDE DESTAQUE */
+
 .prod-destaque-container {
     margin-top: 0px;
     position: relative;
@@ -133,80 +217,9 @@ a {
     }
 }
 
-
-footer {
-    background-color: #151515;
-    padding-top: 70px;
-    color: white;
-    display: flex;
-    box-shadow: 0 10px 110px rgba(0, 0, 0, 0.5);
-}
-
-.footer-col{
-    display: flex;
-    flex-direction: column;
-    margin-right: 120px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    gap: 0px;
-}
-.footer-col h3{
-    font-size: 1vw;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-weight: lighter;
-    word-spacing: 6px;
-}
-
-.footer-col h4{
-    font-size: 0.8vw;
-    margin-top: 8px;
-    margin-bottom: 0px;
-    font-weight: lighter;
-    word-spacing: 6px;
-}
-
-.copyright{
-    color: grey;
-    margin-top: 70px;
-    margin-bottom: 60px;
-    margin-left: -374.92px;
-}
-
-#icons-footer{
-    display: flex;
-    gap: 15px;
-}
-
-#face{
-    width: 35px;
-    height: 35px;
-    background-image: url(fotos/icons/face.png);
-    background-size: cover;
-    background-position: center;
-}
-#insta{
-    width: 35px;
-    height: 35px;
-    background-image: url(fotos/icons/insta.png);
-    background-size: cover;
-    background-position: center;
-}
-#zap{
-    width: 35px;
-    height: 35px;
-    background-image: url(fotos/icons/zap.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.deitado {
-
-    list-style: none;
-    display: flex;
-    gap: 30px;
-
-}
+/* MAIN */
+/* MAIN */
+/* MAIN */
 
 main {
     margin-top: 70px;
@@ -315,7 +328,7 @@ hr{
 #oferta1{
     width: 550px;
     height: 390px;
-    background-image: url(fotos/modelo1.png);
+    background-image: url(../fotos/modelo1.png);
     background-size: cover;
     background-position: bottom;
     border-radius: 28px;
@@ -324,7 +337,7 @@ hr{
 #oferta2{
     width: 550px;
     height: 390px;
-    background-image: url(fotos/modelo2.png);
+    background-image: url(../fotos/modelo2.png);
     background-size: cover;
     background-position: bottom;
     border-radius: 28px;
@@ -358,7 +371,7 @@ hr{
 #coca{
     width: 300px;
     height: 300px;
-    background-image: url(fotos/sponsor/coca.jpg);
+    background-image: url(../fotos/sponsor/coca.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -367,7 +380,7 @@ hr{
 #poliane{
     width: 300px;
     height: 300px;
-    background-image: url(fotos/sponsor/poliane.jpg);
+    background-image: url(../fotos/sponsor/poliane.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -376,7 +389,7 @@ hr{
 #floriane{
     width: 300px;
     height: 300px;
-    background-image: url(fotos/sponsor/floriane.jpg);
+    background-image: url(../fotos/sponsor/floriane.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -385,7 +398,7 @@ hr{
 #pepsi{
     width: 300px;
     height: 300px;
-    background-image: url(fotos/sponsor/pepsi.jpg);
+    background-image: url(../fotos/sponsor/pepsi.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -394,7 +407,7 @@ hr{
 #lebon{
     width: 300px;
     height: 300px;
-    background-image: url(fotos/sponsor/lebon.png);
+    background-image: url(../fotos/sponsor/lebon.png);
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -403,7 +416,7 @@ hr{
 #vorcaro{
     width: 300px;
     height: 300px;
-    background-image: url(fotos/sponsor/vorcaro.jpg);
+    background-image: url(../fotos/sponsor/vorcaro.jpg);
     background-size: cover;
     background-position: top;
     border-radius: 15px;
@@ -412,7 +425,7 @@ hr{
 #virginia{
     width: 300px;
     height: 300px;
-    background-image: url(fotos/sponsor/virginia.jpg);
+    background-image: url(../fotos/sponsor/virginia.jpg);
     background-size: cover;
     background-position: top;
     border-radius: 15px;
