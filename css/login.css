@@ -3,7 +3,14 @@ body {
     background: #f0f2f5;
     font-size: 1.4rem;
 }
-
+#logo{
+    width: 268px;
+    height: 174px;
+    background-image: url(../fotos/icons/logo-horizontal.png);
+    background-size: cover;
+    background-position: center;
+    margin: 50px auto 0px auto;
+}
 button{
     font-family: sans-serif;
 }
@@ -62,9 +69,11 @@ button {
     margin-bottom: 0rem;
     font-size: 1.3rem;
     border-radius: 10px;
+
+    transition: background 0.3s ease-in-out;
+    
     &:hover{
         background: #bd6328;
-        animation: rebola 1500ms infinite;
     }
 }
 
@@ -78,11 +87,4 @@ button {
 #curto{
     margin: 0px;
     text-align: left;
-}
-@keyframes rebola{
-    0% { transform: rotate(0deg); }
-    5% { transform: rotate(1deg); }
-    15% { transform: rotate(-1deg); }
-    25% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
 }
