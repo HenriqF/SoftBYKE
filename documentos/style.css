@@ -1,0 +1,60 @@
+.collapse{
+    margin-bottom: 3%;
+}
+
+.collapse-button{
+    cursor: pointer;
+
+    width: 75%;
+    border: none;
+
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    transition: background-color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
+
+    &:hover{
+        background-color:  #404040;
+        color: white;
+    }
+}
+.collapse-button.active .collapse-img {
+    transform: rotate(90deg);
+}
+
+.collapse-conteudo{
+    display: none;
+
+    width: 75%;
+    border: none;
+
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    background-color:  #404040;
+    color: white;
+    justify-content: space-between;
+
+    p{
+        text-align: justify;
+    }
+}
+
+
+.collapse-img{
+    height: 3vw;
+    width: 3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../fotos/seta.png);
+
+    transition: transform 0.2s ease;
+}
