@@ -1,0 +1,78 @@
+/* ===== CONTAINER DA PAGINA ===== */
+/* max-width segura a largura e margin auto centraliza o bloco */
+#sobrenos {
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    padding: 60px 50px 70px 50px;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#sobrenos h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+/* ===== CADA SECAO ===== */
+.sobre-bloco {
+    margin-bottom: 45px;
+}
+
+.sobre-bloco h2 {
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.sobre-bloco p {
+    margin: 0;
+    line-height: 1.8;
+    color: #333333;
+    text-align: justify;
+}
+
+/* ===== LISTA DE COMPROMISSOS ===== */
+.sobre-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sobre-lista li {
+    margin-bottom: 12px;
+    padding: 14px 18px;
+
+    line-height: 1.8;
+    color: #333333;
+
+    background-color: #fafafa;
+    border-left: 3px solid #151515;
+}
+
+.sobre-lista strong {
+    color: #151515;
+}
+
+/* ===== LINK DENTRO DO TEXTO ===== */
+#sobrenos a {
+    color: #151515;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 768px) {
+    #sobrenos {
+        padding: 40px 25px;
+        border-radius: 0;
+    }
+
+    #sobrenos h1 {
+        font-size: 1.8rem;
+    }
+}
