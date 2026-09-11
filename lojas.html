@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossas Lojas</title>
     <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/lojas.css">
 </head>
 <body>
     <header id="site-header">
@@ -30,33 +31,74 @@
         </div>
     </header>
 
-    <main>  <!-- começo do texto do sobre nos -->
+     <main>
 
     <div id="lojas">
-       <h1>Conheça Nossas unidades</h1>
+        <h1>Conheça Nossas Unidades</h1>
 
-        <div class="loja-item">]
-            <img src="Loja-Física1.png" alt="Unidade Asa Sul" width="400">
+        <div class="loja-item">
+            <img src="fotos/icons/Loja-Fisica.png" alt="Unidade Asa Sul" width="300">
 
-        <strong><p>Endereço:</p></strong> SDN, CNB - Asa Sul, Brasília - DF
-        <strong><p>Horário:</p></strong> Seg a Sex, 9h às 19h | Sáb, 9h às 14h
-        
-        <button class="fotos/loja-bnt" onclick="toggleMapa('Mapa1')">
+            <div class="loja-info">
+                <p><strong>Endereço:</strong> SDN, CNB - Asa Sul, Brasília - DF</p>
+                <p><strong>Horário:</strong> Seg a Sex, 9h às 19h | Sáb, 9h às 14h</p>
 
-        </button>
+                <button class="loja-btn" onclick="toggleMapa('Mapa1')">
+                    📍 Ver no Maps
+                </button>
 
-        <div class="loja-mapa" id="Mapa1">
-            <iframe
-                src="https://maps.google.com/maps?q=-15.791281,-47.883178&z=15&output=embed"
-                width="100%" height="300" style="border: 0;" loading="lazy">
-        </iframe>
-      </div>
+                <div class="loja-mapa" id="Mapa1">
+                    <iframe
+                        src="https://maps.google.com/maps?q=-15.791281,-47.883178&z=15&output=embed"
+                        width="100%" height="300" style="border: 0;" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
 
+        <div class="loja-item">
+            <img src="fotos/icons/Loja-Fisica 2.png" alt="Unidade Taguatinga" width="300">
+
+            <div class="loja-info">
+                <p><strong>Endereço:</strong> Ed. Green Park - R. 20 Norte, Lotes 1/3 Loja nº 11 e 12 - Center, Brasília - DF</p>
+                <p><strong>Horário:</strong> Seg a Sex, 9h às 19h | Sáb, 9h às 14h</p>
+
+                <button class="loja-btn" onclick="toggleMapa('Mapa2')">
+                    📍 Ver no Maps
+                </button>
+
+                <div class="loja-mapa" id="Mapa2">
+                    <iframe
+                        src="https://maps.google.com/maps?q=-15.8387894,-48.0252623&z=15&output=embed"
+                        width="100%" height="300" style="border: 0;" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="loja-item">
+            <img src="fotos/icons/Loja-Fisica 3.png" alt="Unidade Águas Claras" width="300">
+
+            <div class="loja-info">
+                <p><strong>Endereço:</strong> St. Central SIGLA C07 Lt 1, 2, 6, 9 e 10 - Centro, Brasília - DF</p>
+                <p><strong>Horário:</strong> Seg a Sex, 9h às 19h | Sáb, 9h às 14h</p>
+
+                <button class="loja-btn" onclick="toggleMapa('Mapa3')">
+                    📍 Ver no Maps
+                </button>
+
+                <div class="loja-mapa" id="Mapa3">
+                    <iframe
+                        src="https://maps.google.com/maps?q=-15.8326508,-48.0556525&z=15&output=embed"
+                        width="100%" height="300" style="border: 0;" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-
-    </main>
+</main>
 
     <footer>
         <div class="footer-col" style="margin-left: 50px;">
