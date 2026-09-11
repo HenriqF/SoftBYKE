@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Moderno</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div id="logo"></div>
+<div id="entras" class="login-card">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Usuário">
+    <input type="password" id="password" placeholder="Senha">
+    <p onmousedown="mostrar_senha()" onmouseup="esconder_senha()" id="curto">Mostrar senha</p>
+    <button onclick="fazerLogin()">Entrar</button>
+    <div id="message"></div>
+    <p onclick="trocar()">Não tem cadastro? Clique para cadastrar!</p>
+</div>
+<a id="index" href="index.html"></a>
+<a id="cadastro" href="cadastro.html"></a>
+<script src="javascript/login.js"></script>
+</body>
+</html>
