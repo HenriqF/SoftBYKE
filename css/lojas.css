@@ -1,16 +1,17 @@
 /* LISTA DE LOJAS */
 /* LISTA DE LOJAS */
 /* LISTA DE LOJAS */
-
 #lojas {
     max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    margin: 0 auto 200px auto;
+    padding: 0px 20px;
 }
 
 #lojas h1 {
+    margin-top: 0px;
     text-align: center;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 100px;
 }
 
 /* cada loja: foto de um lado e as informações do outro */

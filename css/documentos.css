@@ -2,20 +2,15 @@
 /* PAGINAS DO PROJETO */
 /* PAGINAS DO PROJETO */
 
-/* altura fixa só pra segurar o rodapé lá embaixo enquanto tem poucos cartões */
-main{
-    height: 1000px;
-}
-
 main h1{
     text-align: center;
-    font-size: 3rem;
-    margin-bottom: 150px;
+    font-size: 2.5rem;
+    margin-bottom: 100px;
 }
 
 /* cada fileira de cartões */
 .linha{
-    margin-top: 100px;
+    margin-top: 75px;
     display: flex;
     justify-content: center;
     gap: 7%;
@@ -39,10 +34,61 @@ main h1{
 }
 
 /* print da página inicial, arredondado só embaixo pra acompanhar o cartão */
+#pagina-paleta{
+    width: 380px;
+    height: 182px;
+    background-image: url(../fotos/paginas/paleta.png);
+    background-size: cover;
+    background-position: bottom;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 7px 7px;
+}
 #pagina-inicial{
     width: 380px;
     height: 182px;
     background-image: url(../fotos/paginas/pagina-inicial.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 7px 7px;
+}
+
+#pagina-lojas{
+    width: 380px;
+    height: 182px;
+    background-image: url(../fotos/paginas/lojas.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 7px 7px;
+}
+#pagina-wireframe{
+    width: 380px;
+    height: 182px;
+    background-image: url(../fotos/paginas/wireframe.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 7px 7px;
+}
+#pagina-login{
+    width: 380px;
+    height: 182px;
+    background-image: url(../fotos/paginas/login.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 7px 7px;
+}
+#pagina-cadastro{
+    width: 380px;
+    height: 182px;
+    background-image: url(../fotos/paginas/cadastro.png);
     background-size: cover;
     background-position: center;
     margin-left: auto;
