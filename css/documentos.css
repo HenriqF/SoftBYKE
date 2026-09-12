@@ -1,3 +1,8 @@
+/* PAGINAS DO PROJETO */
+/* PAGINAS DO PROJETO */
+/* PAGINAS DO PROJETO */
+
+/* altura fixa só pra segurar o rodapé lá embaixo enquanto tem poucos cartões */
 main{
     height: 1000px;
 }
@@ -8,6 +13,7 @@ main h1{
     margin-bottom: 150px;
 }
 
+/* cada fileira de cartões */
 .linha{
     margin-top: 100px;
     display: flex;
@@ -15,6 +21,7 @@ main h1{
     gap: 7%;
 }
 
+/* cartão branco com o print e o nome da página embaixo */
 .pagina{
     background-color: white;
     width: 390px;
@@ -31,6 +38,7 @@ main h1{
     margin: 10px 0px 10px 0px;
 }
 
+/* print da página inicial, arredondado só embaixo pra acompanhar o cartão */
 #pagina-inicial{
     width: 380px;
     height: 182px;
