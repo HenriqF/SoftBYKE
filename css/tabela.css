@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    height: 2900px;
+}
+
+table, th, td{
+    border: 5px solid #f0f2f5;
+    border-collapse: collapse;
+    text-align: center;
+}
+table{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+
+#tabela_div{
+    width: 500px;
+    height: 500px;
+    rotate: 0deg;
+
+    position: absolute;
+
+    margin: 900px auto 0px auto;
+
+    animation: move 7s infinite linear, jump 1.5s infinite linear;
+
+
+}
+
+@keyframes move{
+    0% {margin-left: 0px;}
+    50% {margin-left: 73.5%;}
+    100% {margin-left: 0px;}
+
+}
+
+@keyframes jump{
+    0% {margin-top: 900px;}
+    25% {margin-top: 350px;}
+    33% {margin-top: 215px;}
+    50% {margin-top: 50px;}
+    66% {margin-top: 215px;}
+    75% {margin-top: 350px;}
+    100% {margin-top: 900px;}
+
+}
