@@ -1,3 +1,7 @@
+/* LISTA DE LOJAS */
+/* LISTA DE LOJAS */
+/* LISTA DE LOJAS */
+
 #lojas {
     max-width: 900px;
     margin: 0 auto;
@@ -9,6 +13,7 @@
     margin-bottom: 40px;
 }
 
+/* cada loja: foto de um lado e as informações do outro */
 .loja-item {
     display: flex;
     gap: 25px;
@@ -18,11 +23,13 @@
     border-bottom: 1px solid #ddd;
 }
 
+/* o flex-shrink impede o flex de espremer a foto quando o texto é grande */
 .loja-item img {
     border-radius: 10px;
     flex-shrink: 0;
 }
 
+/* o flex 1 faz o texto ocupar todo o espaço que sobra do lado da foto */
 .loja-info {
     flex: 1;
 }
@@ -43,6 +50,7 @@
     background-color: #EF7F34;
 }
 
+/* o mapa começa escondido e só aparece quando clica no botão */
 .loja-mapa {
     display: none;
     margin-top: 15px;

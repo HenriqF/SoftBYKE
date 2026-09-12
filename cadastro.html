@@ -7,19 +7,28 @@
 </head>
 <body>
 <div id="logo"></div>
+
+<!-- COMEÇO CADASTRO -->
 <div id="cadas" class="signup-card">
     <h2>Cadastro</h2>
     <input type="text" id="username" placeholder="Usuário">
     <input type="text" id="email" placeholder="E-mail">
     <input type="password" id="password" placeholder="Senha">
     <input type="password" id="password2" placeholder="Confirmar senha">
+
+    <!-- segurando o mouse aqui as duas senhas aparecem, soltando somem de novo -->
     <p onmousedown="mostrar_senha()" onmouseup="esconder_senha()" id="curto">Mostrar senha</p>
+
     <button onclick="fazerSignup()">Cadastrar</button>
     <div id="message"></div>
     <p onclick="trocar()">Já possui conta?</p>
 </div>
+<!-- FINAL DO CADASTRO -->
+
+<!-- links invisíveis: o javascript clica neles pra trocar de página -->
 <a id="login" href="login.html"></a>
 <a id="index" href="index.html"></a>
+
 <script src="javascript/cadastro.js"></script>
 </body>
 </html>
