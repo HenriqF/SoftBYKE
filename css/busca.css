@@ -1,0 +1,69 @@
+
+
+input[type="text"]{
+    box-sizing: border-box;
+    width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    padding: 8px 16px;
+    
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+
+    resize: none;
+    border: none;
+    border-radius: 10px;
+
+}
+input[type="text"]:focus {
+    outline: none;
+}
+
+.area-busca {
+    width: 100%;    
+}
+
+.select-categorias {
+    box-sizing: border-box;
+    width: 75%;
+
+
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: block;
+
+
+    input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    label {
+        padding: 8px 16px;
+        background-color: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+        user-select: none;
+        background-color: gray;
+        color: white;
+        margin-right: 10px;
+
+        
+    }
+
+    label:hover {
+        color: #1f1f1f;
+        background-color: #606060;
+    }
+
+    input:checked + label {
+        background-color: #EF7F34;
+        color: white;
+    }
+}
