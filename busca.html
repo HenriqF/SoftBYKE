@@ -7,6 +7,7 @@
     <title>SOFTBYKE WEBSITE</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/busca.css">
+    <link rel="stylesheet" href="css/bicicletas.css">
 </head>
 
 <body>
@@ -62,27 +63,67 @@
         <div class="area-busca">
             <input type="text" id="textarea-buscar" placeholder="BUSCAR"></input>
 
+            <!-- PARTE DE SELEÇÃO -->
             <div class="select-categorias">
-
                 <div>
-                    <input type="radio" id="bikes" name="categoria" value="a" checked>
+                    <input type="radio" id="bikes" name="categoria" value="bicicleta" checked>
                     <label for="bikes">BICICLETAS</label>
 
-                    <input type="radio" id="acessorios" name="categoria" value="b">
+                    <input type="radio" id="acessorios" name="categoria" value="acessorio">
                     <label for="acessorios">ACESSÓRIOS</label>
 
-                    <input type="radio" id="pecas" name="categoria" value="c">
+                    <input type="radio" id="pecas" name="categoria" value="pecas">
                     <label for="pecas">PEÇAS</label>
                 </div>
+            </div>
 
+            <br><br><br>
 
+            <!-- RESULTADOS DA BUSCA -->
+            <div id="resultados-busca">
+                <section class="categoria">
+                    <ul class="grade-produtos">
+                        <li class="card-produto">
+                            <a href="#">
+                                <div class="card-imagem">
+                                    <img src="fotos/bike1.png" alt="Bicicleta Wendy aro 26 azul de quadro alto">
+                                </div>
+                                <div class="card-info">
+                                    <p class="card-nome">Wendy Aro 26 Azul</p>
+                                    <p class="card-desc">18 marchas, freio V-brake</p>
+                                    <p class="card-preco">R$ 899,00</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card-produto">
+                            <a href="#">
+                                <div class="card-imagem">
+                                    <img src="fotos/bike3.png" alt="Bicicleta Wendy aro 26 verde água de quadro alto">
+                                </div>
+                                <div class="card-info">
+                                    <p class="card-nome">Wendy Aro 26 Verde Água</p>
+                                    <p class="card-desc">18 marchas, freio V-brake</p>
+                                    <p class="card-preco">R$ 899,00</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card-produto">
+                            <a href="#">
+                                <div class="card-imagem">
+                                    <img src="fotos/bike4.png" alt="Bicicleta Wendy aro 26 verde de quadro alto">
+                                </div>
+                                <div class="card-info">
+                                    <p class="card-nome">Wendy Aro 26 Verde</p>
+                                    <p class="card-desc">18 marchas, freio V-brake</p>
+                                    <p class="card-preco">R$ 899,00</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
             </div>
 
         </div>
-
-
-
-
 
 
     </main>
@@ -124,6 +165,30 @@
 
     </footer>
 
+
+    <template id="template-grade">
+        <section class="categoria">
+            <ul class="grade-produtos">
+            </ul>
+        </section>
+    </template>
+
+    <template id="template-produto">
+            <li class="card-produto">
+                <a href="#">
+                    <div class="card-imagem">
+                        <img src="fotos/bike1.png" alt="Bicicleta Wendy aro 26 azul de quadro alto">
+                    </div>
+                    <div class="card-info">
+                        <p class="card-nome">Wendy Aro 26 Azul</p>
+                        <p class="card-desc">18 marchas, freio V-brake</p>
+                        <p class="card-preco">R$ 899,00</p>
+                    </div>
+                </a>
+            </li>
+    </template>
+
+    <script src="javascript/busca.js"></script>
     <script src="javascript/index.js"></script>
 </body>
 
