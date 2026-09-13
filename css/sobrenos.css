@@ -1,5 +1,4 @@
-/* ===== CONTAINER DA PAGINA ===== */
-/* max-width segura a largura e margin auto centraliza o bloco */
+/* Container do cartao branco que envolve toda a pagina Sobre Nos */
 #sobrenos {
     max-width: 900px;
     margin: 0 auto 80px auto;
@@ -10,18 +9,76 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-#sobrenos h1 {
+/* Bloco do topo: texto "Sobre Nos" + logo da marca */
+.sobrenos-topo {
     text-align: center;
-    font-size: 2.4rem;
-    margin-top: 0;
     margin-bottom: 50px;
 }
 
-/* ===== CADA SECAO ===== */
+/* Texto pequeno acima da logo */
+.sobrenos-eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #666666;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+/* Logo da marca, mantendo a proporcao da imagem */
+.sobrenos-logo {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+}
+
+/* Linha que junta a foto da loja e o texto lado a lado */
+.sobre-conteudo {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Caixa com as três fotos da loja, empilhadas uma embaixo da outra */
+.foto-loja {
+    flex: 0 0 260px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    /* Faz as fotos acompanharem a rolagem enquanto o texto ao lado e lido */
+    position: sticky;
+    top: 100px;
+}
+
+/* Cada foto: largura toda da coluna, altura proporcional e sem cortar nada */
+.foto-loja img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Coluna com todas as secoes de texto, ao lado da foto */
+.sobre-texto {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Espaco entre uma secao de texto e a proxima */
 .sobre-bloco {
     margin-bottom: 45px;
 }
 
+/* Remove o espaco extra da ultima secao de texto */
+.sobre-texto .sobre-bloco:last-child {
+    margin-bottom: 0;
+}
+
+/* Titulo de cada secao (ex: "Quem somos") */
 .sobre-bloco h2 {
     font-size: 1.3rem;
     margin-bottom: 14px;
@@ -29,20 +86,27 @@
     border-bottom: 2px solid #e0e0e0;
 }
 
+/* Paragrafos dentro de cada secao */
 .sobre-bloco p {
-    margin: 0;
+    margin: 0 0 20px 0;
     line-height: 1.8;
     color: #333333;
     text-align: justify;
 }
 
-/* ===== LISTA DE COMPROMISSOS ===== */
+/* Remove o espaco extra do ultimo paragrafo de uma secao */
+.sobre-bloco p:last-child {
+    margin-bottom: 0;
+}
+
+/* Lista de compromissos dentro da secao "Nosso compromisso" */
 .sobre-lista {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Cada item da lista de compromissos */
 .sobre-lista li {
     margin-bottom: 12px;
     padding: 14px 18px;
@@ -54,25 +118,41 @@
     border-left: 3px solid #151515;
 }
 
+/* Palavra em negrito no inicio de cada item da lista */
 .sobre-lista strong {
     color: #151515;
 }
 
-/* ===== LINK DENTRO DO TEXTO ===== */
+/* Links dentro do texto (ex: "veja os enderecos e horarios") */
 #sobrenos a {
     color: #151515;
     font-weight: bold;
     text-decoration: underline;
 }
 
-/* ===== CELULAR ===== */
+/* Ajustes para telas de celular */
 @media (max-width: 768px) {
+
+    /* Cartao ocupa a tela toda, sem cantos arredondados */
     #sobrenos {
         padding: 40px 25px;
         border-radius: 0;
     }
 
-    #sobrenos h1 {
-        font-size: 1.8rem;
+    /* Logo menor no celular */
+    .sobrenos-logo {
+        max-width: 220px;
+    }
+
+    /* Foto e texto ficam empilhados em vez de lado a lado */
+    .sobre-conteudo {
+        flex-direction: column;
+    }
+
+    /* Foto vira uma faixa acima do texto, sem acompanhar a rolagem */
+    .foto-loja {
+        width: 100%;
+        flex: none;
+        position: static;
     }
 }

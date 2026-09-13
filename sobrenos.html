@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Cabeçalho com logo, menu e ícones -->
     <header id="site-header">
         <div class="espacado-deitado">
             <a href="index.html">
@@ -37,7 +38,6 @@
                         <li>Documentos</li>
                     </a>
                 </ul>
-
             </nav>
             <nav id="icons-header">
                 <div id="search"></div>
@@ -48,75 +48,103 @@
     </header>
 
     <main>
-        <div id="sobrenos"> <!-- começo do texto do sobre nos -->
-            <h1>Sobre Nós</h1>
+        <!-- Cartão branco com todo o conteúdo da página -->
+        <div id="sobrenos">
 
-            <section class="sobre-bloco">
-                <h2>Quem somos</h2>
-                <p>
-                    A SoftBYKE nasceu em 2023, em Brasília, da vontade de aproximar as pessoas da
-                    bicicleta seja para competir, para se locomover todo dia ou simplesmente para
-                    pedalar no fim de semana. Em três anos de estrada, saímos de uma loja para três
-                    unidades no Distrito Federal, sempre com a mesma ideia: quem entra aqui precisa
-                    sair com a bike certa, não com a mais cara.
-                </p>
-            </section>
+            <!-- Rótulo "Sobre Nós" + logo da marca -->
+            <div class="sobrenos-topo">
+                <p class="sobrenos-eyebrow">Sobre Nós</p>
+                <img src="fotos/icons/logo.png" alt="SoftBYKE" class="sobrenos-logo">
+            </div>
 
-            <section class="sobre-bloco">
-                <h2>O que fazemos</h2>
-                <p>
-                    Trabalhamos com venda, aluguel e manutenção de bicicletas, peças e acessórios.
-                    Nosso catálogo vai da primeira bike de quem está começando até equipamento para
-                    quem já tem quilometragem nas pernas. E o que sai pela loja online tem o mesmo
-                    suporte de quem compra presencialmente: precisou de ajuste, revisão ou troca,
-                    é só aparecer em uma das nossas unidades.
-                </p>
-            </section>
+            <!-- Foto da loja e texto lado a lado -->
+            <div class="sobre-conteudo">
 
-            <section class="sobre-bloco">
-                <h2>Para quem pedala</h2>
-                <p>
-                    Atendemos atletas, ciclistas de estrada e de trilha, quem usa a bicicleta para ir
-                    ao trabalho e quem ainda está descobrindo o esporte. Ninguém precisa saber o nome
-                    de cada peça para ser bem atendido nossa equipe está aqui justamente para
-                    traduzir e ajudar na escolha.
-                </p>
-            </section>
+                <!-- Três fotos da loja, empilhadas uma embaixo da outra -->
+                <div class="foto-loja">
+                    <img src="fotos/icons/Loja-Fisica.png" alt="Foto da loja SoftBYKE 1">
+                    <img src="fotos/icons/Loja-Fisica2.png" alt="Foto da loja SoftBYKE 2">
+                    <img src="fotos/icons/Loja-Fisica3.png" alt="Foto da loja SoftBYKE 3">
+                </div>
 
-            <section class="sobre-bloco">
-                <h2>Nosso compromisso</h2>
-                <ul class="sobre-lista">
-                    <li>
-                        <strong>Compra personalizada.</strong> Ajudamos você a escolher pelo seu uso,
-                        sua altura e seu orçamento não pelo que precisamos vender.
-                    </li>
-                    <li>
-                        <strong>Entrega rápida.</strong> Compras online entregues em todo o Distrito
-                        Federal, com acompanhamento do pedido.
-                    </li>
-                    <li>
-                        <strong>Garantia e pós-venda de verdade.</strong> Suporte por telefone, e-mail
-                        ou WhatsApp, antes e depois da compra.
-                    </li>
-                    <li>
-                        <strong>Ponto de apoio físico.</strong> Três lojas para resolver pessoalmente
-                        o que a internet não resolve.
-                    </li>
-                </ul>
-            </section>
+                <!-- Coluna com todas as seções de texto -->
+                <div class="sobre-texto">
 
-            <section class="sobre-bloco">
-                <h2>Onde nos encontrar</h2>
-                <p>
-                    Somos três unidades no Distrito Federal, com oficina própria e equipe técnica em
-                    todas elas. Passe para conhecer.
-                    <a href="lojas.html">veja os endereços e horários</a>.
-                </p>
-            </section>
+                    <!-- Quem é a SoftBYKE -->
+                    <section class="sobre-bloco">
+                        <h2>Quem somos</h2>
+                        <p>
+                            A SoftBYKE nasceu em 2023, em Brasília, da vontade de aproximar as pessoas da
+                            bicicleta seja para competir, para se locomover todo dia ou simplesmente para
+                            pedalar no fim de semana. Em três anos de estrada, saímos de uma loja para três
+                            unidades no Distrito Federal, sempre com a mesma ideia: quem entra aqui precisa
+                            sair com a bike certa, não com a mais cara.
+                        </p>
+                    </section>
 
-        </div><!-- final do texto sobre nos -->
+                    <!-- O que a loja oferece -->
+                    <section class="sobre-bloco">
+                        <h2>O que fazemos</h2>
+                        <p>
+                            Trabalhamos com venda, aluguel e manutenção de bicicletas, peças e acessórios.
+                            Nosso catálogo vai da primeira bike de quem está começando até equipamento para
+                            quem já tem quilometragem nas pernas. E o que sai pela loja online tem o mesmo
+                            suporte de quem compra presencialmente: precisou de ajuste, revisão ou troca,
+                            é só aparecer em uma das nossas unidades.
+                        </p>
+                    </section>
+
+                    <!-- Para quem é o produto/serviço -->
+                    <section class="sobre-bloco">
+                        <h2>Para quem pedala</h2>
+                        <p>
+                            Atendemos atletas, ciclistas de estrada e de trilha, quem usa a bicicleta para ir
+                            ao trabalho e quem ainda está descobrindo o esporte. Ninguém precisa saber o nome
+                            de cada peça para ser bem atendido nossa equipe está aqui justamente para
+                            traduzir e ajudar na escolha.
+                        </p>
+                    </section>
+
+                    <!-- Lista com os diferenciais da loja -->
+                    <section class="sobre-bloco">
+                        <h2>Nosso compromisso</h2>
+                        <ul class="sobre-lista">
+                            <li>
+                                <strong>Compra personalizada.</strong> Ajudamos você a escolher pelo seu uso,
+                                sua altura e seu orçamento não pelo que precisamos vender.
+                            </li>
+                            <li>
+                                <strong>Entrega rápida.</strong> Compras online entregues em todo o Distrito
+                                Federal, com acompanhamento do pedido.
+                            </li>
+                            <li>
+                                <strong>Garantia e pós-venda de verdade.</strong> Suporte por telefone, e-mail
+                                ou WhatsApp, antes e depois da compra.
+                            </li>
+                            <li>
+                                <strong>Ponto de apoio físico.</strong> Três lojas para resolver pessoalmente
+                                o que a internet não resolve.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Onde encontrar as lojas físicas -->
+                    <section class="sobre-bloco">
+                        <h2>Onde nos encontrar</h2>
+                        <p>
+                            Somos três unidades no Distrito Federal, com oficina própria e equipe técnica em
+                            todas elas. Passe para conhecer.
+                            <a href="lojas.html">veja os endereços e horários</a>.
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
     </main>
 
+    <!-- Rodapé com dados da faculdade, integrantes e contatos -->
     <footer>
         <div class="footer-col" style="margin-left: 50px;">
             <h3>CIÊNCIA DA COMPUTAÇÃO</h3>
@@ -151,7 +179,6 @@
                 </a>
             </div>
         </div>
-
     </footer>
 </body>
 
