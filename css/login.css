@@ -1,8 +1,14 @@
-body { 
-    font-family: sans-serif;  
+/* LOGIN */
+/* LOGIN */
+/* LOGIN */
+
+body {
+    font-family: sans-serif;
     background: #f0f2f5;
     font-size: 1.4rem;
 }
+
+/* logo horizontal centralizada em cima do cartão */
 #logo{
     width: 268px;
     height: 174px;
@@ -11,6 +17,8 @@ body {
     background-position: center;
     margin: 50px auto 0px auto;
 }
+
+/* o botão não herda a fonte do body sozinho, por isso tem que repetir aqui */
 button{
     font-family: sans-serif;
 }
@@ -20,6 +28,7 @@ h2{
     color: #EF7F34;
 }
 
+/* os <p> dessa página são clicáveis (mostrar senha e ir pro cadastro) */
 p{
     font-size: 1rem;
     color: grey;
@@ -30,25 +39,27 @@ p{
     }
 }
 
+/* os 50% com o translate deixam o cartão no meio exato da tela */
 .login-card {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white; 
+    background: white;
     padding: 2rem;
     padding-top: 1rem;
-    border-radius: 8px; 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
-    width: 25rem; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 25rem;
 }
 
-input { 
+/* o inset joga a sombra pra dentro do campo, dando aquele efeito de afundado */
+input {
     width: 100%;
     height: 3rem;
-    padding: 10px; 
-    margin: 10px 0; 
-    box-sizing: border-box; 
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
     border: none;
     box-shadow: 0 0 5px 1px rgba(0,0,0,.2) inset;
     border-radius: 3px;
@@ -58,32 +69,34 @@ input {
     }
 }
 
-button { 
-    width: 100%; 
+button {
+    width: 100%;
     padding: 1rem;
-    background: #EF7F34; 
-    color: white; 
-    border: none; 
-    cursor: pointer; 
+    background: #EF7F34;
+    color: white;
+    border: none;
+    cursor: pointer;
     margin-top: 1rem;
     margin-bottom: 0rem;
     font-size: 1.3rem;
     border-radius: 10px;
 
     transition: background 0.3s ease-in-out;
-    
+
     &:hover{
         background: #bd6328;
     }
 }
 
-#message { 
+/* espaço reservado pras mensagens de erro do login */
+#message {
     color: red;
-    margin-top: 10px; 
-    font-size: 0.9rem; 
-    text-align: center; 
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
+/* o "Mostrar senha" fica na esquerda e colado no campo, diferente dos outros <p> */
 #curto{
     margin: 0px;
     text-align: left;

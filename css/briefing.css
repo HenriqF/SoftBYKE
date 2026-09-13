@@ -1,3 +1,7 @@
+/* PERGUNTAS DO BRIEFING */
+/* PERGUNTAS DO BRIEFING */
+/* PERGUNTAS DO BRIEFING */
+
 h1{
     text-align: center;
 }
@@ -5,6 +9,7 @@ h1{
     margin-bottom: 3%;
 }
 
+/* botão cinza com a pergunta */
 .collapse-button{
     cursor: pointer;
 
@@ -19,7 +24,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     transition: background-color 0.1s ease-in-out;
     transition: color 0.1s ease-in-out;
 
@@ -28,10 +33,13 @@ h1{
         color: white;
     }
 }
+
+/* quem coloca a classe active é o javascript, aí a setinha gira 90 graus */
 .collapse-button.active .collapse-img {
     transform: rotate(90deg);
 }
 
+/* a resposta começa escondida, o javascript troca o display pra block */
 .collapse-conteudo{
     display: none;
 
@@ -52,6 +60,7 @@ h1{
 }
 
 
+/* setinha do lado direito do botão */
 .collapse-img{
     height: 3vw;
     width: 3vw;

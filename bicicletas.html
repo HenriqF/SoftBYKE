@@ -1,36 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bicicletas</title>
     <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/bicicletas.css">
 </head>
+
 <body>
     <header id="site-header">
         <div class="espacado-deitado">
-            <a href="index.html"><div id="logo"></div></a>
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
 
             <nav>
                 <ul class="deitado">
-                    <a href="bicicletas.html"><li>Bicicletas</li></a>
-                    <a href="acessorios.html"><li>Acessórios</li></a>
-                    <a href="lojas.html"><li>Lojas</li></a>
-                    <a href="sobrenos.html"><li>Sobre Nós</li></a>
-                    <a href="briefing.html"><li>Briefing</li></a>
-                    <a href="documentos.html"><li>Documentos</li></a>
+                    <a href="bicicletas.html">
+                        <li>Bicicletas</li>
+                    </a>
+                    <a href="acessorios.html">
+                        <li>Acessórios</li>
+                    </a>
+                    <a href="lojas.html">
+                        <li>Lojas</li>
+                    </a>
+                    <a href="sobrenos.html">
+                        <li>Sobre Nós</li>
+                    </a>
+                    <a href="briefing.html">
+                        <li>Briefing</li>
+                    </a>
+                    <a href="documentos.html">
+                        <li>Documentos</li>
+                    </a>
                 </ul>
 
             </nav>
             <nav id="icons-header">
                 <div id="search"></div>
                 <div id="shop"></div>
-                <a href="login.html"><div id="profile"></div></a>
+                <a href="login.html">
+                    <div id="profile"></div>
+                </a>
             </nav>
         </div>
     </header>
 
-    <main></main>
+    <main>
+        <!-- COMEÇO BANNER -->
+        <section id="banner-bicicletas">
+            <img src="fotos/wide1.png" alt="Ciclista pedalando em uma estrada de terra à beira do mar">
+            <div id="banner-texto">
+                <h1>Bicicletas</h1>
+                <h2>Encontre a bike certa para o seu tipo de pedal</h2>
+            </div>
+        </section>
+        <!-- FINAL DO BANNER -->
+
+        <!-- BARRA COM A BUSCA E O BOTAO DE ACESSIBILIDADE -->
+        <div id="barra-produtos">
+            <button id="busca-avancada" type="button">BUSCA AVANÇADA</button>
+            <h2>PRODUTOS</h2>
+            <button id="acessibilidade" type="button" aria-label="Opções de acessibilidade">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                    <circle cx="12" cy="3.8" r="2" />
+                    <path d="M12 7c-2 0-4 .5-6 1v2c1.6-.5 3-.9 4.3-1v3.2L8 20h2.2l1.8-5 1.8 5H16l-2.3-7.8V9c1.3.1 2.7.5 4.3 1V8c-2-.5-4-1-6-1z" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- COMEÇO DOS PRODUTOS -->
+        <section class="categoria">
+            <h3>MOUNTAIN BIKE ARO 26 &middot; QUADRO ALTO</h3>
+            <ul class="grade-produtos">
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike1.png" alt="Bicicleta Wendy aro 26 azul de quadro alto">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Wendy Aro 26 Azul</p>
+                            <p class="card-desc">18 marchas, freio V-brake</p>
+                            <p class="card-preco">R$ 899,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike3.png" alt="Bicicleta Wendy aro 26 verde água de quadro alto">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Wendy Aro 26 Verde Água</p>
+                            <p class="card-desc">18 marchas, freio V-brake</p>
+                            <p class="card-preco">R$ 899,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike4.png" alt="Bicicleta Wendy aro 26 verde de quadro alto">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Wendy Aro 26 Verde</p>
+                            <p class="card-desc">18 marchas, freio V-brake</p>
+                            <p class="card-preco">R$ 899,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike5.png" alt="Bicicleta Wendy aro 26 vermelha de quadro alto">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Wendy Aro 26 Vermelha</p>
+                            <p class="card-desc">18 marchas, freio V-brake</p>
+                            <p class="card-preco">R$ 949,00</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="categoria">
+            <h3>MOUNTAIN BIKE ARO 26 &middot; QUADRO BAIXO</h3>
+            <ul class="grade-produtos">
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike2.png" alt="Bicicleta Wendy aro 26 rosa de quadro baixo">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Wendy Aro 26 Rosa</p>
+                            <p class="card-desc">18 marchas, freio V-brake</p>
+                            <p class="card-preco">R$ 899,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike6.png" alt="Bicicleta Wendy aro 26 pink de quadro baixo">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Wendy Aro 26 Pink</p>
+                            <p class="card-desc">18 marchas, freio V-brake</p>
+                            <p class="card-preco">R$ 899,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike7.png" alt="Bicicleta Wendy aro 26 roxa de quadro baixo">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Wendy Aro 26 Roxa</p>
+                            <p class="card-desc">18 marchas, freio V-brake</p>
+                            <p class="card-preco">R$ 949,00</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="categoria">
+            <h3>MOUNTAIN BIKE ARO 29</h3>
+            <ul class="grade-produtos">
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike8.png" alt="Mountain bike Sense aro 29 azul com freio a disco">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Sense Aro 29 Azul</p>
+                            <p class="card-desc">21 marchas, freio a disco</p>
+                            <p class="card-preco">R$ 3.299,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike9.png" alt="Mountain bike Caloi aro 29 preta e amarela com freio a disco">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Caloi Aro 29 Preta</p>
+                            <p class="card-desc">21 marchas, freio a disco</p>
+                            <p class="card-preco">R$ 2.899,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike10.png" alt="Mountain bike Cannondale aro 29 azul com freio a disco">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Cannondale Aro 29 Azul</p>
+                            <p class="card-desc">12 marchas, freio a disco</p>
+                            <p class="card-preco">R$ 4.590,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike15.png" alt="Mountain bike Sense aro 29 grafite e vermelha com freio a disco">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Sense Aro 29 Grafite</p>
+                            <p class="card-desc">21 marchas, freio a disco</p>
+                            <p class="card-preco">R$ 3.590,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike14.png" alt="Mountain bike Sense aro 29 prata e preta com freio a disco">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Sense Aro 29 Prata</p>
+                            <p class="card-desc">12 marchas, freio a disco</p>
+                            <p class="card-preco">R$ 5.290,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike11.png" alt="Mountain bike Sense aro 29 cinza com freio a disco">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Sense Aro 29 Cinza</p>
+                            <p class="card-desc">12 marchas, freio a disco</p>
+                            <p class="card-preco">R$ 8.900,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike13.png" alt="Mountain bike Sense aro 29 verde escura com freio a disco">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Sense Aro 29 Verde</p>
+                            <p class="card-desc">12 marchas, freio a disco</p>
+                            <p class="card-preco">R$ 9.500,00</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="categoria">
+            <h3>SPEED</h3>
+            <ul class="grade-produtos">
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike12.png" alt="Bicicleta speed KODE preta e vermelha de quadro de carbono">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">KODE Speed Carbono</p>
+                            <p class="card-desc">Quadro de carbono, freio a disco</p>
+                            <p class="card-preco">R$ 12.900,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike16.png" alt="Bicicleta speed Swift preta de quadro de carbono">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Swift Speed Carbono</p>
+                            <p class="card-desc">Quadro de carbono, freio a disco</p>
+                            <p class="card-preco">R$ 15.900,00</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike18.png" alt="Bicicleta speed Swift Racevox preta de quadro de carbono">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Swift Racevox Carbono</p>
+                            <p class="card-desc">Quadro de carbono, freio a disco</p>
+                            <p class="card-preco">R$ 18.500,00</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="categoria">
+            <!-- so temos um modelo eletrico por enquanto -->
+            <h3>ELÉTRICA</h3>
+            <ul class="grade-produtos">
+                <li class="card-produto">
+                    <a href="#">
+                        <div class="card-imagem">
+                            <img src="fotos/bike17.png" alt="Bicicleta elétrica Sense full suspension preta">
+                        </div>
+                        <div class="card-info">
+                            <p class="card-nome">Sense E-Bike Full Suspension</p>
+                            <p class="card-desc">Motor central, suspensão full</p>
+                            <p class="card-preco">R$ 34.900,00</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- FINAL DOS PRODUTOS -->
+    </main>
 
     <footer>
         <div class="footer-col" style="margin-left: 50px;">
@@ -38,7 +328,7 @@
             <h3>DESENVOLVIMENTO WEB</h3>
             <h3>TURMA A</h3>
         </div>
-        
+
         <div class="footer-col">
             <h3 style="margin-bottom: 5px;">INTEGRANTES</h3>
             <h4>DAN MARANGON</h4>
@@ -55,12 +345,19 @@
             <h4>softbyke@softbyke.com</h4>
             <br>
             <div id="icons-footer">
-                <a href="https://www.facebook.com/Lula/?locale=pt_BR" target="_blank"><div id="face"></div></a>
-                <a href="https://www.instagram.com/jairmessiasbolsonaro/" target="_blank"><div id="insta"></div></a>
-                <a href="https://wa.me/5561992242098" target="_blank"><div id="zap"></div></a>
+                <a href="https://www.facebook.com/Lula/?locale=pt_BR" target="_blank">
+                    <div id="face"></div>
+                </a>
+                <a href="https://www.instagram.com/jairmessiasbolsonaro/" target="_blank">
+                    <div id="insta"></div>
+                </a>
+                <a href="https://wa.me/5561992242098" target="_blank">
+                    <div id="zap"></div>
+                </a>
             </div>
         </div>
 
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,206 @@
+/* MAIN */
+/* MAIN */
+/* MAIN */
+
+/* os 70px sobrescrevem os 200px do header-footer.css, senão sobra
+   um espaço branco entre o cabeçalho fixo e o banner */
+main {
+    margin-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* IMAGEM ULTRA WIDE DESTAQUE */
+/* IMAGEM ULTRA WIDE DESTAQUE */
+/* IMAGEM ULTRA WIDE DESTAQUE */
+
+#banner-bicicletas {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 21 / 7;
+}
+
+#banner-bicicletas img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: left bottom;
+    display: block;
+}
+
+/* o degradê escuro embaixo é pra dar contraste e o texto branco ficar legível */
+#banner-texto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2.5%;
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+#banner-texto h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 2.5vw;
+}
+
+#banner-texto h2 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 1.2vw;
+    font-weight: normal;
+}
+
+/* BARRA DE BUSCA */
+/* BARRA DE BUSCA */
+/* BARRA DE BUSCA */
+
+/* o auto nas laterais centraliza a barra junto com as categorias */
+#barra-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#barra-produtos h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+#busca-avancada {
+    width: 180px;
+    height: 45px;
+    background-color: #EF7F34;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+        opacity: 60%;
+    }
+}
+
+/* o border-radius de 50% é o que deixa o botão redondo */
+#acessibilidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #151515;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+        opacity: 70%;
+    }
+}
+
+/* CATEGORIAS E CARDS */
+/* CATEGORIAS E CARDS */
+/* CATEGORIAS E CARDS */
+
+.categoria {
+    max-width: 1200px;
+    margin-top: 0;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.categoria h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    color: #151515;
+}
+
+/* diferente da vitrine da página inicial, aqui o wrap quebra a linha
+   sozinho em vez de rolar pro lado */
+.grade-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* a largura fixa é o que define quantos cards cabem por fileira */
+.card-produto {
+    width: 280px;
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 14px;
+
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* as fotos têm tamanhos diferentes, então o flex centraliza cada uma na caixa */
+.card-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    background-color: #e8eaed;
+}
+
+/* contain mostra a bike inteira, sem cortar as rodas */
+.card-imagem img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+}
+
+.card-info {
+    padding: 14px 16px;
+    background-color: #3f3f3f;
+    color: white;
+}
+
+.card-nome {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-desc {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    color: #c9c9c9;
+}
+
+.card-preco {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #EF7F34;
+}
