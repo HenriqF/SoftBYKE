@@ -76,7 +76,9 @@ a {
 
     transition: background-image 0.3s ease-in-out;
 }
-
+li:hover{
+    color: orange
+}
 /* FOOTER */
 /* FOOTER */
 /* FOOTER */
