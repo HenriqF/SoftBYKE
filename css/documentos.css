@@ -95,6 +95,45 @@ main h1{
     margin-right: auto;
     border-radius: 0 0 7px 7px;
 }
+#pagina-bicicletas{
+    width: 380px;
+    height: 182px;
+    background-image: url(../fotos/paginas/bicicletas.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 7px 7px;
+}#pagina-acessorios{
+    width: 380px;
+    height: 182px;
+    background-image: url(../fotos/paginas/acessorios.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 7px 7px;
+}
+#pagina-busca{
+    width: 380px;
+    height: 182px;
+    background-image: url(../fotos/paginas/busca.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 7px 7px;
+}
+#pagina-sobrenos{
+    width: 380px;
+    height: 182px;
+    background-image: url(../fotos/paginas/sobrenos.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 7px 7px;
+}
 
 li:hover{
     color: orange
