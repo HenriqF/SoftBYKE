@@ -152,7 +152,7 @@ main {
 /* a largura fixa é o que define quantos cards cabem por fileira */
 .card-produto {
     width: 280px;
-    background-color: white;
+    background-color: #3f3f3f;
     border-radius: 14px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 14px;
