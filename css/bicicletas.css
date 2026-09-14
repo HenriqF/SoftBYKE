@@ -72,7 +72,8 @@ main {
 }
 
 #barra-produtos h2 {
-    margin: 0;
+    text-align: center;
+    margin: 0 auto;
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
@@ -87,31 +88,12 @@ main {
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
+    position: absolute;
 
     transition: opacity 0.2s ease-in-out;
 
     &:hover {
         opacity: 60%;
-    }
-}
-
-/* o border-radius de 50% é o que deixa o botão redondo */
-#acessibilidade {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background-color: #151515;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-
-    transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-        opacity: 70%;
     }
 }
 
@@ -131,7 +113,7 @@ main {
 
 .categoria h3 {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     font-size: 0.95rem;
     letter-spacing: 1px;
     color: #151515;
@@ -140,11 +122,12 @@ main {
 /* diferente da vitrine da página inicial, aqui o wrap quebra a linha
    sozinho em vez de rolar pro lado */
 .grade-produtos {
+    width: 1040px;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 50px 100px;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
