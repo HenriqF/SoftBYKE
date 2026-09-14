@@ -20,7 +20,7 @@ h1{
     margin-top: 0;
     margin-bottom: 0;
 
-    background-color: gray;
+    background-color: rgb(177, 177, 177);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,14 +29,19 @@ h1{
     transition: color 0.1s ease-in-out;
 
     &:hover{
-        background-color:  #404040;
-        color: white;
+        background-color:  #EF7F34;
     }
+
+    border-radius: 12px;
+
 }
 
 /* quem coloca a classe active é o javascript, aí a setinha gira 90 graus */
 .collapse-button.active .collapse-img {
     transform: rotate(90deg);
+}
+.collapse-button.active{
+    border-radius: 12px 12px 0px 0px;
 }
 
 /* a resposta começa escondida, o javascript troca o display pra block */
@@ -57,13 +62,16 @@ h1{
     p{
         text-align: justify;
     }
+
+    border-radius: 0px 0px 12px 12px;
+
 }
 
 
 /* setinha do lado direito do botão */
 .collapse-img{
-    height: 3vw;
-    width: 3vw;
+    height: 25px;
+    width: 25px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../fotos/seta.png);
