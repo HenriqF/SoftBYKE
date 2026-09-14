@@ -95,3 +95,17 @@ main h1{
     margin-right: auto;
     border-radius: 0 0 7px 7px;
 }
+
+li:hover{
+    color: orange
+}
+
+etc {
+    animation: etc 2s infinite;
+}
+
+@keyframes etc{
+    0% {color: #ffffff}
+    50% {color:#000000}
+    100% {color: #ffffff}
+}
