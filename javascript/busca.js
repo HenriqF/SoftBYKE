@@ -179,6 +179,76 @@ const produtos = [
         nome: "Sense E-Bike Full Suspension",
         descricao: "Motor central, suspensão full",
         preco: "R$ 34.900,00"
+    },
+    {
+        tag: "acessorio",
+        imagem: {
+            src: "fotos/peca5.png",
+            alt: "Capacete vermelho"
+        },
+        nome: "Capacete vermelho",
+        descricao: "Design aerodinâmico e ventilação eficiente",
+        preco: "R$ 67,00"
+    },
+    {
+        tag: "acessorio",
+        imagem: {
+            src: "fotos/peca6.png",
+            alt: "Capacete roxo"
+        },
+        nome: "Capacete roxo",
+        descricao: "Design aerodinâmico e ventilação eficiente",
+        preco: "R$ 67,00"
+    },
+    {
+        tag: "acessorio",
+        imagem: {
+            src: "fotos/peca3.png",
+            alt: "Capacete sem visora, com design aerodinâmico e ventilação eficiente preto"
+        },
+        nome: "Capacete SoftBYKE preto",
+        descricao: "Design aerodinâmico e ventilação eficiente",
+        preco: "R$ 120,00"
+    },
+    {
+        tag: "acessorio",
+        imagem: {
+            src: "fotos/peca4.png",
+            alt: "Capacete com visor preto, design aerodinâmico e ventilação eficiente"
+        },
+        nome: "Capacete SoftBYKE com Visor",
+        descricao: "Design aerodinâmico e ventilação eficiente",
+        preco: "R$ 150,00"
+    },
+    {
+        tag: "pecas",
+        imagem: {
+            src: "fotos/peca1.png",
+            alt: "Banco de bicicleta com espuma e revestimento em couro sintético"
+        },
+        nome: "Banco de bicicleta com espuma e revestimento em couro sintético",
+        descricao: "Banco confortável para ciclistas que buscam estilo e funcionalidade",
+        preco: "R$ 100,00"
+    },
+    {
+        tag: "pecas",
+        imagem: {
+            src: "fotos/peca2.png",
+            alt: "Peça exclusiva do SoftBYKE, compre e se surpreenda"
+        },
+        nome: "Peça exclusiva do SoftBYKE",
+        descricao: "Peça de alta qualidade para bicicletas",
+        preco: "R$ 67,00"
+    },
+    {
+        tag: "pecas",
+        imagem: {
+            src: "fotos/peca7.png",
+            alt: "Rodas duplas para bicicleta aro 26, com pneus de alta performance"
+        },
+        nome: "Rodas SoftBYKE",
+        descricao: "Rodas aerodinâmicas",
+        preco: "R$ 11.676,00"
     }
 ];
 
@@ -233,6 +303,11 @@ function executar_busca(){
 
     resultados = [];
     produtos.forEach(produto => {
+        if (categoria_selecionada == "todos" && fuzzy_match(busca, produto["nome"])){
+            resultados.push(produto);
+            return;
+        }
+
         if (fuzzy_match(busca, produto["nome"]) && produto["tag"] == categoria_selecionada){
             resultados.push(produto);
         }
