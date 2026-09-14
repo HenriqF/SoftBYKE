@@ -57,15 +57,7 @@ a {
     gap: 25px;
     margin: 10px -150px 10px 0px;
 }
-#shop{
-    width: 35px;
-    height: 35px;
-    background-image: url(../fotos/icons/shop.png);
-    background-size: cover;
-    background-position: center;
 
-    transition: background-image 0.3s ease-in-out;
-}
 #profile{
     width: 35px;
     height: 35px;
