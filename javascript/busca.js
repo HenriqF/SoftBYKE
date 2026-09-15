@@ -1,5 +1,5 @@
 const produtos = [
-    //lista criada pelo GEMINI com base em bicicletas.html
+    //lista criada pelo GEMINI com base em bicicletas.html 67
     {
         tag: "bicicleta",
         imagem: {
